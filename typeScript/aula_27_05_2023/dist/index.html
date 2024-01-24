@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Forca</title>
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body style="text-align: center; align-items: center; width:100%; height: 100%;">
+    <br><br><br><br><br><br>
+    <h1>Jogo da Forca!!</h1>
+    <button id="iniciar" onclick="começar()">Começar</button>
+    <span id="textoCategoria">Categoria da palavra: </span><span id="categoriaTexto">Categoria</span>
+    <br>
+    <div id="digito">
+        <input type="text" name="digito" style="width: 10px;" maxlength="1" id="input">
+        <br>&nbsp;
+        <button id="tentar" onclick="jogar()">Tentar</button>
+    </div>
+    <br>
+    <div style="font-size: xx-large;" id="palavraTexto"></div>
+    <script>
+        function jogar() {
+            if (inserido !== null) {
+                letraDigitada = inserido.value
+            }
+            if (letraDigitada != "") {
+                for (let index in arrayPalavra) {
+                    if (letraDigitada?.toUpperCase() == arrayPalavra[index].toUpperCase()) {
+                        palavraOculta[index] = arrayPalavra[index]
+                        console.log(palavraOculta[index])
+                        alert("A palavra possui a letra " + letraDigitada + "!!")
+                        atualizaPalavra()
+                    }
+                }
+            } else {
+                alert("Dígito inválido, tente novamente.")
+                tentativas--
+            }
+        }
+    </script>
+</body>
+
+</html>
