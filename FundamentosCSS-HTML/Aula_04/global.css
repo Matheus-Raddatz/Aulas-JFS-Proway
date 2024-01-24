@@ -1,0 +1,11 @@
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.link:hover{
+    color: white;
+}
+.footervalue{
+    initial-value: "®Copyright Matheus Raddatz 2022";
+}

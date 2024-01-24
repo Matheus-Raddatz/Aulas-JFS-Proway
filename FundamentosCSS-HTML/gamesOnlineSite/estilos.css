@@ -1,0 +1,37 @@
+.linksMenu{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    padding-left: 15px;
+}
+.fundoPagina{
+    background-image: url(./images/backgroundGamesOnline.webp);
+}
+.fonte{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imgJogos{
+    width: 623px;
+}
+.imgHome{
+    image-rendering: optimizeQuality;
+    border-radius: 20px;
+}
+.fontLarge{
+    font-size: large;
+}
+.fontXLarge{
+    font-size: x-large;
+}
+.talCenter{
+    text-align: center;
+}
+.cRed{
+    color: red;
+}
+.bcRed{
+    background-color: red;
+}
+.jusCenter{
+    justify-content: center;
+}
