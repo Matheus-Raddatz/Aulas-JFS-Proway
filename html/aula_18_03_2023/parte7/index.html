@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videochat, step1</title>
+    <script>
+        function update(stream) {
+            document.getElementsByTagName('video') [0].src = stream.url;
+        }
+    </script>
+</head>
+<body>
+    <p>To start chatting, select a video camera: <device type="media" onchange="update(this.data)"></p>
+    <video autoplay>
+</body>
+</html>

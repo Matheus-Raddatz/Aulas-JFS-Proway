@@ -1,0 +1,16 @@
+.fundoPagina{
+    background-image: url(./img/bgOverlay.jpg);
+}
+.links{
+    text-decoration: none;
+    color: black;
+    margin-top: 32px;
+    margin-left: 25px;
+    font-size: larger;
+    font-weight: bold;
+}
+.fundoFooter{
+    background-image: url(img/2def16c83856275a6864f57c4563a76b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
