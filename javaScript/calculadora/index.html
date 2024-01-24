@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+        var calculo = ""
+        var ligado = false
+        function ligarDesligar() {
+            if (ligado == false){
+                ligado = true
+                document.getElementById("calculo").innerHTML = "ON"
+            } else {
+                ligado = false
+                document.getElementById("calculo").innerHTML = "OFF"
+                calculo = ""
+            }
+        }
+        function apagar() {
+            if (ligado == true) {
+                document.getElementById("calculo").innerHTML = "ON"
+                calculo = ""
+            }
+        }
+        function calcular(digito) {
+            if (ligado == true) {
+                calculo = calculo + digito
+                document.getElementById("calculo").innerHTML = calculo
+            }
+        }
+        function finalizar() {
+            if (ligado == true) {
+                resultado = eval(calculo)
+                document.getElementById("calculo").innerHTML = resultado
+                calculo = ""
+            }
+        }
+    </script>
+    <table border= + 2 + >
+        <th colspan = 4; id="calculo">OFF</th>
+        <tr>
+            <td> <button onclick="apagar()">C</button> </td>
+            <td> <button onclick="calcular(' ** '); mostraCalc(calculo)">^</button> </td>
+            <td> <button onclick="calcular(' % '); mostraCalc(calculo)">%</button> </td>
+            <td> <button onclick="calcular(' / '); mostraCalc(calculo)">/</button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="calcular('7'); mostraCalc(calculo)">7</button> </td>
+            <td> <button onclick="calcular('8'); mostraCalc(calculo)">8</button> </td>
+            <td> <button onclick="calcular('9'); mostraCalc(calculo)">9</button> </td>
+            <td> <button onclick="calcular(' * '); mostraCalc(calculo)">*</button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="calcular('4'); mostraCalc(calculo)">4</button> </td>
+            <td> <button onclick="calcular('5'); mostraCalc(calculo)">5</button> </td>
+            <td> <button onclick="calcular('6'); mostraCalc(calculo)">6</button> </td>
+            <td> <button onclick="calcular(' - '); mostraCalc(calculo)">-</button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="calcular('1'); mostraCalc(calculo)">1</button> </td>
+            <td> <button onclick="calcular('2'); mostraCalc(calculo)">2</button> </td>
+            <td> <button onclick="calcular('3'); mostraCalc(calculo)">3</button> </td>
+            <td> <button onclick="calcular(' + '); mostraCalc(calculo)">+</button> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="ligarDesligar()">@</button> </td>
+            <td> <button onclick="calcular('0'); mostraCalc(calculo)">0</button> </td>
+            <td> <button onclick="calcular('.'); mostraCalc(calculo)">.</button> </td>
+            <td> <button onclick="finalizar()">=</button> </td>
+        </tr>
+    </table>
+</body>
+
+</html>

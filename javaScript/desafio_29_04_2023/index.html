@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <script>
+        var texto = ""
+        var input = ""
+        var vogaisLista = ""
+        var consoantesLista = ""
+        var maiusculasLista = ""
+        var minusculasLista = ""
+
+        function vogais(input) {
+            texto = input.value
+            if (texto !== "") {
+                vogaisLista = texto.match(/[aeiouà-úÀ-Ú]/gi)
+                alert(vogaisLista ? vogaisLista : [])
+                vogaisLista = ""
+                texto = ""
+            } else {
+                alert("Insira um texto válido")
+            }
+        }
+
+        function consoantes(input) {
+            texto = input.value
+            if (texto !== "") {
+                consoantesLista = texto.match(/[bcdfghjklmnpqrstvwxyz]/gi)
+                alert(consoantesLista ? consoantesLista : [])
+                consoantesLista = ""
+                texto = ""
+            } else {
+                alert("Insira um texto válido")
+            }
+        }
+
+        function maiusculas(input) {
+            texto = input.value
+            if (texto !== "") {
+                maiusculasLista = texto.match(/[A-ZÀ-Ú]/g)
+                alert(maiusculasLista ? maiusculasLista : [])
+                maiusculasLista = ""
+                texto = ""
+            } else {
+                alert("Insira um texto válido")
+            }
+        }
+
+        function minusculas(input) {
+            texto = input.value
+            if (texto !== "") {
+                minusculasLista = texto.match(/[a-zà-ú]/g)
+                alert(minusculasLista ? minusculasLista : [])
+                minusculasLista = ""
+                texto = ""
+            } else {
+                alert("Insira um texto válido")
+            }
+        }
+
+    </script>
+    <label for="texto">Digite sua frase</label>
+    <input type="text" id="texto">
+    <br><br>
+    <button onclick="vogais(document.getElementById('texto'))">Vogais</button>
+    <button onclick="consoantes(document.getElementById('texto'))">Consoantes</button>
+    <button onclick="maiusculas(document.getElementById('texto'))">Maiusculas</button>
+    <button onclick="minusculas(document.getElementById('texto'))">Minusculas</button>
+</body>
+
+</html>

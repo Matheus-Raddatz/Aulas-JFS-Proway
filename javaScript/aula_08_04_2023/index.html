@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript básico</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        function mediaCalc() {
+            nota1 = parseFloat(prompt("Insira a primeira nota"))
+            nota2 = parseFloat(prompt("Insira a segunda nota"))
+            nota3 = parseFloat(prompt("Insira a terceira nota"))
+            nota4 = parseFloat(prompt("Insira a quarta nota"))
+            media = ((nota1 + nota2 + nota3 + nota4) / 4)
+            document.write(
+                "<table> <th>Nota 1 |</th> <th>Nota 2 |</th> <th>Nota 3 |</th> <th>Nota 4 |</th> <th>Média</th> <tr> <td>" + nota1 + "</td> <td>" + nota2 + "</td> <td>" + nota3 + "</td> <td>" + nota4 + "</td> <td>" + media + "</td> </tr> </table>"
+            )
+            if (media > 7) {
+                alert("Aluno aprovado")
+            } else {
+                alert("Aluno reprovado")
+            }
+        }
+    </script>
+    <button onclick="mediaCalc()">Calcular média</button>
+</body>
+</html>
