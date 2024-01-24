@@ -1,2 +1,2 @@
-# Aulas-JFS-Proway
-Repositório para as aulas de Java Full-Stack na Proway
+# Aulas-Angular-Proway
+Repositório para as aulas de Angular na Proway
