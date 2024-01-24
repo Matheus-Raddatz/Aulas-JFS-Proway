@@ -1,0 +1,35 @@
+<h1>Hello World</h1>
+<app-teste></app-teste>
+<app-teste2></app-teste2>
+<p>{{msg}}</p>
+<button (click)="adeus()">Hello World!!</button>
+<br><br>
+<button (click)="esconder()">{{rotulo}}</button>
+<br><br>
+<label>Property Bind</label><br><br>
+<button [hidden]="!escondido">Outro</button>
+<br><br>
+<input type="text" [value]="nome">
+<br><br><hr><hr>
+<div class="container">
+    <h2 class="text-center">Lista de contatos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ct of lista">
+                <td>{{ct.nome}}</td>
+                <td>{{ct.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <form #f="ngForm" (ngSubmit)="salvar(f.value)">
+        <input type="text" placeholder="Informe seu nome" ngModel name="nome">
+        <input type="text" placeholder="Informe seu email" ngModel name="email">
+        <button>Salvar</button>
+    </form>
+</div>
