@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    a{
+      padding: 60px;
+      text-decoration: none;
+      color: black;
+      text-decoration: underline;
+      font-size: larger;
+      font-weight: 600;
+    }
+    nav{
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1>Menu</h1>
+    <nav>
+      <a routerLink="/cadastro">Cadastro</a>
+      <a routerLink="/consulta">Consulta</a>
+      <a routerLink="/edicao">Edição</a>
+      <a routerLink="/about">Sobre</a>
+    </nav>
+  </div>
+  <hr>
+  <router-outlet></router-outlet>
+</body>
+</html>
