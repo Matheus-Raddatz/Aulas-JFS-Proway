@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página index</title>
+    <link rel="stylesheet" href="compartilhado.css">
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        img:hover{
+            width: 315px;
+            height: 210px;
+        }
+        #meu_id{
+            border: 1px solid black;
+        }
+        #borda_grossa{
+            border: 5px dashed #369bc3;
+        }
+        .remover_estilo{
+            text-decoration: none;
+        }
+        #enviar{
+            background-color: blue;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 8px;
+            color: white;
+        }
+        #enviar:hover{
+            background-color: aqua;
+            color: black;
+        }
+        #enviar::after{
+            content: " Enviar";
+        }
+        #enviar:hover::after{
+            content: " Geralmente ID é único, então não use o id enviar em outro seletor, pfv";
+        }
+    </style>
+</head>
+<body>
+    <div id="enviar"></div>
+    <p>Sou um parágrafo</p>
+    <h1>Sou um header grande</h1>
+    <a href="http://oliota.com" id="meu_id" class="remover_estilo">Site do professor</a>
+    <br>
+    <img src="https://www.infoescola.com/wp-content/uploads/2008/05/onca-pintada-591459416.jpg" alt="Imagem não encontrada" height="200">
+    <ul>
+        <li><i id="borda_grossa" class="remover_estilo">Itálico</i></li>
+        <li><b class="remover_estilo">Negrito</b></li>
+        <li><u class="remover_estilo">Underline</u></li>
+        <li><s class="remover_estilo">Riscado</s></li>
+    </ul>
+    <a href="pagina3.html">Vai para página 3 por cima dessa</a>
+    <br>
+    <a href="outra_pagina.html" target="_blank">Vai para a outra página em outra aba</a>
+    <p><u class="remover_estilo">Sem underline</u></p>
+    <p id="unico">Sou unico</p>
+    <h2 style="background-color: blueviolet; color: white;">Título até que grande</h2>
+    <u>Underline</u>
+    <s>Riscado</s>
+    <p style="color: blue;">Vermelho?</p>
+</body>
+</html>
