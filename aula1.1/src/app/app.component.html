@@ -1,0 +1,27 @@
+<div class="container">
+    <h2 class="text-center">Cadastro de contatos</h2><br><br>
+    <table class="table table-striped">
+        <thead>
+            <tr class="bg-success">
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ct of lista">
+                <td>{{ct.nome}}</td>
+                <td>{{ct.email}}</td>
+                <td>{{ct.telefone}}</td>
+                <td><button (click)="excluir(ct)">Excluir</button></td>
+            </tr><br><br>
+        </tbody>
+    </table>
+    <form #f="ngForm" (ngSubmit)="salvar(f.value)" class="text-center">
+        <input type="text" placeholder="Informe o nome" ngModel name="nome">&nbsp;&nbsp;
+        <input type="text" placeholder="Informe o email" ngModel name="email">&nbsp;&nbsp;
+        <input type="text" placeholder="Informe o telefone" ngModel name="telefone">&nbsp;&nbsp;
+        <button>Cadastrar</button>
+    </form>
+</div>
