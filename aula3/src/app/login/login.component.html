@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="text-center">Página de Login</h1>
+    <form #f="ngForm" (ngSubmit)="login(f.value)">
+        <label class="form-label">Email:</label>
+        <input type="text" class="form-control" name="email" ngModel>
+
+        <label class="form-label">Senha:</label>
+        <input type="text" class="form-control" name="senha" ngModel>
+        <div>
+            <button class="btn btn-primary">Logar</button>
+            <button class="btn btn-danger">Cancelar</button>
+        </div>
+    </form>
+</div>
