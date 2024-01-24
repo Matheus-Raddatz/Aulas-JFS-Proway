@@ -1,0 +1,23 @@
+<style>
+  a {
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: lightsteelblue;
+  }
+</style>
+
+<div class="container">
+  <br>
+  <nav class="navbar">
+    <a routerLink="/login">Login</a>
+    <a routerLink="/cadastroUser">Registre-se</a>
+    <a routerLink="/cadastroContato">Cadastrar Contato</a>
+    <a routerLink="/consultaContato">Visualizar Contatos</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

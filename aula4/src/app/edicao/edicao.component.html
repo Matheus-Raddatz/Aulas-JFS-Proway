@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="text-center">Edição de contato</h1>
+    <form>
+        <label for="id">ID</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.id" name="id" readonly>
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.nome" name="nome">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.email" name="email">
+        <label for="fone">Fone</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.fone" name="fone">
+        <label for="endereco">Endereco</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.endereco" name="endereco">
+        <div>
+            <button class="btn btn-primary" (click)="salvar(contato.id)">Salvar</button>
+        </div>
+    </form>
+</div>

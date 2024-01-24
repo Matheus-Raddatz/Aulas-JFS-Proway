@@ -1,0 +1,27 @@
+{
+  "contatos": [
+    {
+      "nome": "Matheus Raddatz",
+      "email": "matheusraddatz@gmail.com",
+      "fone": "98109802831",
+      "endereco": "bungas rua 12",
+      "id": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Matheus Raddatz",
+      "email": "matheusraddatz@gmail.com",
+      "fone": "98109802831",
+      "senha": "bungas037"
+    },
+    {
+      "nome": "Matheus Raddatz",
+      "email": "matheusraddatz@gmail.com",
+      "fone": "98109802831",
+      "senha": "123",
+      "id": 2
+    }
+  ]
+}

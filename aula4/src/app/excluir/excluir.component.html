@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="text-center">Tem certeza que deseja excluir esse contato?</h1>
+    <form>
+        <label for="id">ID</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.id" name="id" readonly>
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.nome" name="nome" readonly>
+        <label for="email">Email</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.email" name="email" readonly>
+        <label for="fone">Fone</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.fone" name="fone" readonly>
+        <label for="endereco">Endereco</label>
+        <input type="text" class="form-control" [(ngModel)]="contato.endereco" name="endereco" readonly>
+        <div>
+            <button class="btn btn-primary" (click)="excluir(contato.id)">Excluir</button>
+        </div>
+    </form>
+</div>
