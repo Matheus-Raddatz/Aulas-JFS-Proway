@@ -1,0 +1,13 @@
+-> Separar o cadastro de contato e a consulta em componentes
+
+-> criar rota para acessar cadastro e consulta
+
+-> ao gravar um contato redireciona para a tela de consulta
+
+Desafio 2
+-> Fazer o cadastro de locais
+
+https://reactrouter.com/en/main/start/tutorial
+https://www.w3schools.com/react/react_router.aspreactjsguru.com
+https://www.freecodecamp.org/portuguese/news/como-fazer-o-fetch-dos-dados-em-react/
+https://reactjsguru.com/how-to-use-http-post-method-in-react-js/
