@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Signo</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid>
+                <h:outputLabel>Informe sua data de Nascimento</h:outputLabel>
+                <h:inputText value="#{sign.dataNascimento}"></h:inputText>
+                <f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
+                
+                <h:outputLabel>Informe o ano de Nascimento</h:outputLabel>
+                <h:inputText value="#{sign.year}"></h:inputText>
+                
+                <h:outputLabel>Informe o mes de Nascimento</h:outputLabel>
+                <h:inputText value="#{sign.month}"></h:inputText>
+                
+                <h:outputLabel>Informe o dia de Nascimento</h:outputLabel>
+                <h:inputText value="#{sign.day}"></h:inputText>
+                <h:commandButton value="Verificar" action="#{signo.identifySign}"></h:commandButton>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
