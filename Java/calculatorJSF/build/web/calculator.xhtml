@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Calculator</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid>
+                <h:outputLabel>First Value</h:outputLabel>
+                <h:inputText value="#{beanCalculator.firstValue}" />
+                <h:outputLabel>Second Value</h:outputLabel>
+                <h:inputText value="#{beanCalculator.secondValue}" />
+                <h:outputLabel>Result: #{beanCalculator.result}</h:outputLabel>
+            </h:panelGrid>
+            <h:panelGrid columns="5">
+                <h:commandButton value="+" action="#{beanCalculator.sum()}" />
+                <h:commandButton value="-" action="#{beanCalculator.subtract()}" />
+                <h:commandButton value="*" action="#{beanCalculator.multiply()}" />
+                <h:commandButton value="/" action="#{beanCalculator.divide()}" />
+                <h:commandButton value="^" action="#{beanCalculator.power()}" />
+            </h:panelGrid>
+        </h:form>
+        <a href="faces/index.xhtml">Main Page</a>
+    </h:body>
+</html>
+

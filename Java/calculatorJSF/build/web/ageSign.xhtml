@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Age and Sign</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid>
+                <h:outputLabel>Birth Date (yyyy-MM-dd)</h:outputLabel>
+                <h:inputText value="#{beanAgeSign.birthYear}" />
+                <h:inputText value="#{beanAgeSign.birthMonth}" />
+                <h:inputText value="#{beanAgeSign.birthDay}" />
+                <h:outputLabel>Birth Date: #{beanAgeSign.birthDate}</h:outputLabel>
+                <h:outputLabel>Age: #{beanAgeSign.age}</h:outputLabel>
+                <h:outputLabel>Sign: #{beanAgeSign.sign}</h:outputLabel>
+            </h:panelGrid>
+            <h:panelGrid>
+                <h:commandButton value="Calcular" action="#{beanAgeSign.calculate()}" />
+            </h:panelGrid>
+        </h:form>
+        <a href="faces/index.xhtml">Main Page</a>
+    </h:body>
+</html>
