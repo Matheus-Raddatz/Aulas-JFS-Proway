@@ -1,2 +1,2 @@
-# Aulas-JFS-Proway
-Repositório para as aulas de Java Full-Stack na Proway
+# Aulas-NJS-Proway
+Repositório para as aulas de Node JS na Proway
