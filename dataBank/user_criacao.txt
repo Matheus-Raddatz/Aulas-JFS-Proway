@@ -1,0 +1,60 @@
+Criando um usuário:
+
+<[ Parte 1 ]>
+
+1> Clicar na pasta "novo", "opção", "usuário";
+
+2> Criar um nome e uma senha para o usuário;
+
+3> Em "tablespace padrão" marcar a opção "system" para armazenar as informações no sistema,
+  em "sysaux" para armazenar as informações em um outro sistema,
+  ou em "users" para armazenar as informações em um usuário específico;
+
+4> Em "tablespace temporária" armazenar na pasta "temp" como padrão ou na pasta "users";
+
+5> Em "profile" deixar sempre a opção "default" selecionada;
+
+6> Marcar a opção "senha expirada" e "conta bloqueada"
+  (obs: essas duas opções devem ser criadas para quando o usuário acessar o
+  banco pela primeira vez deverá alterar sua senha para desbloquear o banco);
+
+7> Clicar na guia "privilégios do objeto";
+
+8> Em "objeto" escolher a opção da(s) tabela(s) de uso comum;
+
+9> Marcar as opções que terão acesso (exemplo: selecionar, atualizar, ler, etc...)
+  com a opção "yes" ou selecionar as opções "grantable" que serão
+  as atribuições que podem ser permitidas pelo administrador da rede;
+
+10> Clicar no botão "aplicar"
+
+<[ Parte 2 ]>
+
+1> Clicar na guia "rolê de privilégios" e selecionar a opção "add_parallel_execute_task"
+  (obs: essa opção indica que todos os parâmetros serão passados para o administrador da rede);
+
+2> Marcar a opção "autenticateduser" (essa opção serve para dar responsabilidade ao usuário);
+
+3> Marcar a opção "dba" (database access) que da acesso total do banco de dados ao usuário;
+
+<[ Parte 3 ]>
+
+1> Clicar na guia "privilégios do sistema";
+
+2> Escolher entre as opções:
+   1> "administer any sql tuning set"
+     (essa opção da direito ao usuário de fazer todas as alterações
+     que são concebida pelo administrador da rede ou ele mesmo);
+
+   2> "alter section", "system", "tablespace", "user", "database", "any table", "any trigger", "any procedure";
+
+   3> "administer all" (todas as opções);
+
+<[ Parte 4 ]>
+
+1> Clicar na guia "cotas";
+
+2> Em "tablespace" selecionar "system, sys_aux, temp, users" em seguida marcar a opção "ilimitado"
+  (obs: escolher o tamanho do espaço para cada local de armazenamento);
+
+3> Clicar no botão "aplicar";

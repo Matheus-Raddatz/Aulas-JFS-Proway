@@ -1,0 +1,26 @@
+create table compromissos(
+    id serial primary key,
+    descricao varchar(200),
+    local varchar(200),
+    data DATE,
+    hora TIME,
+    idcontato int
+);
+
+alter table compromissos add constraint fk_contatos
+foreign key(idcontato)
+references contatos(id);
+
+create table contatos(
+  id serial primary key,
+  nome varchar(50),
+  email varchar(50),
+  fone varchar(14)
+)
+select cp.*,ct.nome from compromissos cp, contatos ct
+where ct.id = cp.idcontato
+
+alter table compromissos
+add column ativo boolean default true;
+
+select * from compromissos
