@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/P:/Java/Aula1.2/web/enviaAlteracaoContato.jsp</file>
+            <file>file:/P:/Java/Aula1.2/web/consultacompromisso.jsp</file>
+            <file>file:/P:/Java/Aula1.2/web/cadcompromissos.jsp</file>
+            <file>file:/P:/Java/Aula1.2/src/java/dao/DaoContato.java</file>
+            <file>file:/P:/Java/Aula1.2/src/java/entidades/Contato.java</file>
+            <file>file:/P:/Java/Aula1.2/web/editacompromisso.jsp</file>
+            <file>file:/P:/Java/Aula1.2/web/cadcontatos.jsp</file>
+            <file>file:/P:/Java/Aula1.2/web/enviaAlteracaoCompromisso.jsp</file>
+            <file>file:/P:/Java/Aula1.2/src/java/entidades/Compromisso.java</file>
+            <file>file:/P:/Java/Aula1.2/src/java/dao/DaoCompromisso.java</file>
+            <file>file:/P:/Java/Aula1.2/src/conf/persistence.xml</file>
+            <file>file:/P:/Java/Aula1.2/web/finalizacompromisso.jsp</file>
+        </group>
+    </open-files>
+</project-private>
