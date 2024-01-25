@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+	background-color: black;
+	color: lime;
+	font-size: x-large;
+}
+
+table, th, td{
+	border: 1px solid;
+}
+
+th, td{
+	width: 150px;
+	align-items: center;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+div{
+	padding-left: 25%;
+}
