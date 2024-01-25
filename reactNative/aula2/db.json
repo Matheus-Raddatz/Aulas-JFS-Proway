@@ -1,0 +1,52 @@
+{
+  "contatos": [
+    {
+      "nome": "Luciano",
+      "email": "luciano@gmail.com",
+      "fone": "(47) 99643-5675",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Braia",
+      "email": "braia@gmail.com",
+      "fone": "(99) 99999-9999"
+    },
+    {
+      "nome": "Star",
+      "email": "star@gmail.com",
+      "fone": "(99) 99999-9999",
+      "id": 3
+    }
+  ],
+  "locais": [
+    {
+      "id": 1,
+      "cep": "89045090",
+      "nome": "Residencial Herta",
+      "rua": "Rua Wilhelm Budag",
+      "bairro": "Velha",
+      "cidade": "Blumenau",
+      "estado": "SC",
+      "descricao": "Nº45; Apt.801"
+    },
+    {
+      "cep": "",
+      "nome": "Proway",
+      "rua": "Rua 7",
+      "bairro": "Proeb",
+      "cidade": "Blumenau",
+      "estado": "SC",
+      "descricao": "Curso de Programação",
+      "id": 2
+    }
+  ],
+  "compromissos": [
+    {
+      "descricao": "Curso as 13:30",
+      "contatoselec": "1",
+      "localselec": "2",
+      "id": 1
+    }
+  ]
+}
