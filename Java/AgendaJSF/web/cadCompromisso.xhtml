@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body onload="#{beanContato.pesquisar()}">
+        <h:messages>
+            
+        </h:messages>        
+        <center>
+            <h:form>
+                <h1 style="text-decoration: underline black solid">Cadastro de Compromissos</h1>
+                <h:panelGrid columns="1">
+                    <h:outputLabel>Local</h:outputLabel>
+                    <h:inputText value="#{beanCompromisso.local}" />
+
+                    <h:outputLabel>Data</h:outputLabel>
+                    <h:inputText value="#{beanCompromisso.data}" />
+
+                    <h:outputLabel>Hora</h:outputLabel>
+                    <h:inputText value="#{beanCompromisso.hora}" />
+
+                    <h:outputLabel>Contato</h:outputLabel>
+                    <h:inputText value="#{beanCompromisso.idcontato}" />
+
+                    <h:panelGrid columns="2">
+                        <h:commandButton action="#{beanCompromisso.salvar()}" value="Salvar"></h:commandButton>
+                        <h:commandButton action="#{beanCompromisso.limpar()}" value="Limpar"></h:commandButton>
+                    </h:panelGrid>
+
+                </h:panelGrid>
+            </h:form>
+        </center>
+
+    </h:body>
+</html>
+
