@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Lista de Users</h1>
+        <hr>
+        <table class="table table-stripped">
+            <% if (lista.length > 0) { %>
+                <thead>
+                    <tr>
+                        <th> ID </th>
+                        <th> | </th>
+                        <th> Nome </th>
+                        <th> | </th>
+                        <th> Email </th>
+                        <th> | </th>
+                        <th> Ações </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if (lista) {
+                        for (i=0; i < lista.length; i++) { %>
+                        <tr>
+                            <td> <%= lista[i].id %> </td>
+                            <td> | </td>
+                            <td> <%= lista[i].nome %> </td>
+                            <td> | </td>
+                            <td> <%= lista[i].email %> </td>
+                            <td> | </td>
+                            <td>
+                                <a href="/users/editar/<%= lista[i].id %>" class="btn btn-primary">Editar</a>
+                                <a href="/users/excluir/<%= lista[i].id %>" class="btn btn-danger">Excluir</a>
+                            </td>
+                        </tr>
+                        <% }
+                    } %>
+                </tbody>
+            <% } else { %>
+                <h1 class="rainbow">Nenhum cadastro encontrado ! !</h1>
+            <% } %>
+        </table>
+        <footer>
+            <a href="/" style="text-decoration: none;" class="btn btn-info">Home</a>
+        </footer>
+    </div>
+</body>
+</html>
