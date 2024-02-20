@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Produtos</title>
+</head>
+<body>
+	<h2>Cadastro de Produtos</h2>
+	<hr>
+	<form th:action=@{/produto/acao/cadastro/salvar} method="POST">
+		<label for="descricao">Informe a descrição</label>
+		<input type="text" id="descricao" name="descricao"/>
+		
+		<label for="preco">Informe o preco (xx.xx)</label>
+		<input type="text" id="preco" name="preco"/>
+		
+		<button>Gravar</button>
+	</form>
+</body>
+</html>
